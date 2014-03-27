@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Arvey R. Jimenez Blog]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2014-03-27T17:29:11+08:00</updated>
+  <updated>2014-03-27T18:23:35+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Arvey Jimenez]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sample]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/03/27/sample/"/>
+    <updated>2014-03-27T18:20:44+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/03/27/sample</id>
+    <content type="html"><![CDATA[<h5>Sample </h5>
+
+]]></content>
+  </entry>
   
 </feed>
