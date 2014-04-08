@@ -4,7 +4,7 @@
   <title><![CDATA[Arvey R. Jimenez Blog]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2014-03-31T15:02:21+08:00</updated>
+  <updated>2014-04-08T11:46:32+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
     <name><![CDATA[Arvey Jimenez]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Javascript and Jquery]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/04/08/learning-javascript-and-jquery/"/>
+    <updated>2014-04-08T10:42:59+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/04/08/learning-javascript-and-jquery</id>
+    <content type="html"><![CDATA[<p align = "justify " style = "text-indent: 30px;"> Learning Javascript and Jquery is not easy for me, because in school we dont have a subject for Javascript and Jquery. Javascript and Jquery enables you to make different effects on a website. You can do some animation like an image slider that will slide or fade, you can do also some effect like when you click the button there will a message or picture that will pop-out. There are so many thing you can do using Javascript or Jquery.</p>
+
+
+
+
+<h3> Difference Between The Two </h3>
+
+
+
+
+<h4><em> Javascript </em> </h4>
+
+
+<p align = "justify " style = "text-indent: 30px;"> Javascript is a scripting language developed by Netscape to enable Web authors to design interactive sites. Javascript is different from Java. Sample code below.</p>
+
+
+<p><img src="images/Javascript.png" style = "width: 100%; height:auto;"/></p>
+
+<h4><em> Jquery </em> </h4>
+
+
+<p align = "justify " style = "text-indent: 30px;"> Jquery for me is much easy than the Javascript and much flexible, because you can do much more and much easy with the use of Javascript. The only difference between them i think is the code but same function. Sample code below.</p>
+
+
+<p><img src="images/Jquery.png" style = "width: 100%; height:auto;"/></p>
+
+<h3> First Exercise in FavMed using Javascript and Jquery (Simple Image Slider).</h3>
+
+
+<p><img src="images/Exercise1.png" style = "width: 100%; height:auto;"/></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Post]]></title>
