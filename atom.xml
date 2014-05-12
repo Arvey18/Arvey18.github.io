@@ -4,7 +4,7 @@
   <title><![CDATA[Arvey R. Jimenez Blog]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2014-04-21T13:08:51+08:00</updated>
+  <updated>2014-05-12T10:21:39+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
     <name><![CDATA[Arvey Jimenez]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wordpress]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/05/11/wordpress/"/>
+    <updated>2014-05-11T19:43:53+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/05/11/wordpress</id>
+    <content type="html"><![CDATA[<p align = "justify " style = "text-indent: 30px;"> Wordpress is an application which you can create a website that is working efficiently and beautifully done. It is a application that is created for the people who does not have enough knowledge on creating a website using HTML, CSS and Javascript or Jquery. In wordpress you can create different website with different designs. The better the theme, the better the output.   </p>
+
+
+<!--more-->
+
+
+
+
+<h4> <em>How to install wordpress?</em></h4>
+
+
+<p><p align = "justify " style = "text-indent: 30px;"> Installing a wordpress is easy, all you need is to install first an application called XAMPP and download the wordpress files (<a target="_blank" style="text-decoration: none; color: black;" href="http://irishlightandcolour.blogspot.com/2013/10/install-xampp-for-linux-on-ubuntu-1204.html"><em>XAMPP</em></a> > <a target="_blank" style="text-decoration: none; color: black;" href="http://wordpress.org/"><em>Wordpress</em></a>). XAMPP is very important because without it you cannot open the the wordpress and we need XAMPP for creating the database of the wordpress that is needed in installing wordpress. You need to always activate the XAMPP before you can use the wordpress. Click <a target="_blank" href="https://codex.wordpress.org/Installing_WordPress">here</a> for the guide in installing wordpress.</p>
+
+<p><h4> <em>Using Wordpress</em></h4>
+<p align = "justify " style = "text-indent: 30px;">After you are done installing it, you will see a log-in page. You need to type the username and password you created.</p></p>
+
+<p><img class="left" src="http://Arvey18.github.io/images/wordpress-log-in.png" title="image" alt="images"></p>
+
+<p><p align = "justify " style = "text-indent: 30px;">The main page of wordpress. This is the page where you will create the website you want to produce. In the left side, you can see the different options you can click to modify your website and in the right side is the informations you put in a youre website.</p></p>
+
+<p><img class="left" src="http://Arvey18.github.io/images/wordpress-main.png" title="image" alt="images"><br/></p>
+
+<p><p align = "justify " style = "text-indent: 30px;"> Wordpress very user-friendly and easy to modify the things inside of it. The output of the website you will create is base upon the theme you are using and how you will put informations on it.</p></p>
+
+<p> <p align = "justify " style = "text-indent: 30px;">When im using wordpress, first thing I do is to find a theme that is applicable to the website i want to create. You can download themes using wordpress by clicking the menu &ldquo;Appearance > themes&rdquo; and you can see the &ldquo;Add new&rdquo; in the top of the page. You can also download in the internet copy it and paste it in the wordpress themes folder. Some themes are free and some are not. After finding a theme, I edit/change, add and delete information in the theme. I add pages using the &ldquo;Pages&rdquo; menu, click it and put the information you want to be included in the website. Example of pages like: About, Services, Contact, Home etc. all of that i create in the pages menu. You can make them as a menu by clicking the &ldquo;Appearance > Menu&rdquo; add them in the menu list. You can add Pictures or videos by clicking the &ldquo;Media&rdquo; and &ldquo;Add new&rdquo;. You can also put some post by clicking &ldquo;Post&rdquo; menu. Another thing is the Plugins that can help your website much more beautiful. One good thing also in wordpress that i noticed that if you have also knowledge in HTML and CSS you can put some style in the Editor by clicking &ldquo;Appearance > Edtor&rdquo;. You can see the output of the website by clicking the Name of the website that is located in the top left side of the browser window that also have an icon of home.</p></p>
+
+<p><p align = "justify " style = "text-indent: 30px;">I enjoyed using wordpress and still working on it to know the other capabilities of it.</p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Other Effects of Image Slider]]></title>
