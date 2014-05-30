@@ -4,7 +4,7 @@
   <title><![CDATA[Arvey R. Jimenez Blog]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2014-05-27T20:16:53+08:00</updated>
+  <updated>2014-05-30T12:29:10+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
     <name><![CDATA[Arvey Jimenez]]></name>
@@ -27,15 +27,19 @@
     <link href="http://Arvey18.github.io/blog/2014/05/13/compass-and-sass/"/>
     <updated>2014-05-13T01:36:19+08:00</updated>
     <id>http://Arvey18.github.io/blog/2014/05/13/compass-and-sass</id>
-    <content type="html"><![CDATA[<p align = "justify " style = "text-indent: 30px;">In the past few days, I learned how to use Compass and SASS. Compass and SASS is a big help for a web developer when they are working with thier CSS. It enables you to create variables, create a mixins, the nested rules, creating sprites and one of the best thing for me is that you can create many CSS file and combine them to 1 CSS file that will be link to the HTML file. It make your CSS files more cleaner and more easier to change. It is a big help for a web developer, especially when they are working with big website.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/compass-and-sass-img.jpg" title="image" alt="images"></p>
+
+<p align = "justify " style = "text-indent: 30px;">In the past few days, I learned how to use Compass and SASS. Compass and SASS is a big help for a web developer when they are working with thier CSS. It enables you to create variables, create a mixins, the nested rules, creating sprites and one of the best thing for me is that you can create many CSS file and combine them to 1 CSS file that will be link to the HTML file. It make your CSS files more cleaner and more easier to change. It is a big help for a web developer, especially when they are working with big website.</p>
+
+
+
+
+<!--more-->
 
 
 
 
 <p align = "justify " style = "text-indent: 30px;">Compass is an application that uses SASS and convert it to a .CSS file. SASS(Syntactically Awesome StyleSheets) allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. It also helps keep large stylesheets well-organized and more easy to modify.</p>
-
-
-<!--more-->
 
 
 
@@ -328,7 +332,9 @@
     <link href="http://Arvey18.github.io/blog/2014/05/11/wordpress/"/>
     <updated>2014-05-11T19:43:53+08:00</updated>
     <id>http://Arvey18.github.io/blog/2014/05/11/wordpress</id>
-    <content type="html"><![CDATA[<p align = "justify " style = "text-indent: 30px;"> Wordpress is an application which you can create a website that is working efficiently and beautifully done. It is a application that is created for the people who does not have enough knowledge on creating a website using HTML, CSS and Javascript or Jquery. In wordpress you can create different website with different designs. The better the theme, the better the output.   </p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/wordpress-img.png" title="image" alt="images"></p>
+
+<p align = "justify " style = "text-indent: 30px;"> Wordpress is an application which you can create a website that is working efficiently and beautifully done. It is a application that is created for the people who does not have enough knowledge on creating a website using HTML, CSS and Javascript or Jquery. In wordpress you can create different website with different designs. The better the theme, the better the output.   </p>
 
 
 <!--more-->
@@ -363,10 +369,10 @@
     <link href="http://Arvey18.github.io/blog/2014/04/14/exercise2/"/>
     <updated>2014-04-14T09:39:51+08:00</updated>
     <id>http://Arvey18.github.io/blog/2014/04/14/exercise2</id>
-    <content type="html"><![CDATA[<p align = "justify " style = "text-indent: 30px;">This is one of my favorite image slider that ive done so far. Showing 3 images and when clicked left and right, it will show the other image  grouped into 3 again. I also learned some other effects inside image slider like the putting some description and adding some animation on it. Output below.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/Exercise2.png" title="image" alt="images"></p>
 
+<p align = "justify " style = "text-indent: 30px;">This is one of my favorite image slider that ive done so far. Showing 3 images and when clicked left and right, it will show the other image  grouped into 3 again. I also learned some other effects inside image slider like the putting some description and adding some animation on it. Output below.</p>
 
-<p><img class="left" src="http://Arvey18.github.io/images/Exercise2.png" title="image" alt="images"></p>
 
 <p><em>&mdash;Home Page</em></p>
 ]]></content>
@@ -377,7 +383,14 @@
     <link href="http://Arvey18.github.io/blog/2014/04/08/learning-javascript-and-jquery/"/>
     <updated>2014-04-08T10:42:59+08:00</updated>
     <id>http://Arvey18.github.io/blog/2014/04/08/learning-javascript-and-jquery</id>
-    <content type="html"><![CDATA[<p align = "justify " style = "text-indent: 30px;"> Learning Javascript and Jquery is not easy for me, because in school we dont have a subject for Javascript and Jquery. Javascript and Jquery enables you to make different effects on a website. You can do some animation like an image slider that will slide or fade, you can do also some effect like when you click the button there will a message or picture that will pop-out. There are so many thing you can do using Javascript or Jquery.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/javascript-Jquery.jpg" title="image" alt="images"></p>
+
+<p align = "justify " style = "text-indent: 30px;"> Learning Javascript and Jquery is not easy for me, because in school we dont have a subject for Javascript and Jquery. Javascript and Jquery enables you to make different effects on a website. You can do some animation like an image slider that will slide or fade, you can do also some effect like when you click the button there will a message or picture that will pop-out. There are so many thing you can do using Javascript or Jquery.</p>
+
+
+
+
+<!--more-->
 
 
 
@@ -402,9 +415,6 @@
 
 
 <p><img class="left" src="http://Arvey18.github.io/images/Jquery.png" title="image" alt="images"></p>
-
-<!--more-->
-
 
 <h3> First Exercise in FavMed using Javascript and Jquery (Simple Image Slider).</h3>
 
