@@ -174,7 +174,217 @@
 
 
         </div>
-        
+        <p><img class="left" src="/images/bootstrap.png" title="image" alt="images"></p>
+
+<p align = "justify" style = "text-indent: 30px;">Bootstrap is one of the best thing i learned so far, because it makes your website responsive. Responsive means whether you open your website in a mobile phone or a tablet your website will always look good and arranged well.</p>
+
+
+
+
+<p align = "justify" style = "text-indent: 30px;">Bootstrap sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. A <code>12-column</code> <strong>responsive grid, dozens of components, JavaScript plugins, typography, form controls,</strong> and even a <strong>web-based Customizer</strong> to make Bootstrap your own.</p>
+
+
+
+
+<!--more-->
+
+
+
+
+<p align = "justify" style = "text-indent: 30px;">Bootstrap is free that you can download <a target="_blank" href="http://getbootstrap.com/">here</a>. Bootstrap offers <strong>pre-made button, progress bar, slider or carousel, alerts, thumbnails</strong> and also the <strong>navigation</strong> part of your html, that you can see it all <a target="_blank" href="http://getbootstrap.com/components/">here</a>. To use the bootstrap all you need to do is download it and connect the <code>CSS</code> and <code>JS</code> files.</p>
+
+
+
+
+<p><p align = "justify" style = "text-indent: 30px;">One of the most used feature of Bootstrap is the <strong>Grid System</strong>. I will explain and show to you what i learned so far with Bootstrap Grid System. Example Code Below.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;!</span><span class="n">DOCTYPE</span> <span class="n">HTML</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;CSS/style.css&quot;</span> <span class="o">/&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;bootstrap-3.1.1-dist/css/bootstrap.css&quot;</span> <span class="o">/&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="kt">id</span><span class="o">=</span><span class="s">&quot;navigations&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar navbar-default navbar-fixed-top&quot;</span> <span class="n">role</span><span class="o">=</span><span class="s">&quot;navigation&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar-header&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;</span><span class="n">button</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar-toggle&quot;</span> <span class="n">data</span><span class="o">&ndash;</span><span class="n">toggle</span><span class="o">=</span><span class="s">&quot;collapse&quot;</span>
+</span><span class='line'>                  <span class="n">data</span><span class="o">&ndash;</span><span class="n">target</span><span class="o">=</span><span class="s">&quot;#navbar-collapse&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;background: white;&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;sr-only&quot;</span><span class="o">&gt;</span><span class="n">Toggle</span> <span class="n">navigation</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;icon-bar&quot;</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;icon-bar&quot;</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;icon-bar&quot;</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">a</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar-brand&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">Brand</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;collapse navbar-collapse&quot;</span> <span class="kt">id</span><span class="o">=</span><span class="s">&quot;navbar-collapse&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;</span><span class="n">ul</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;nav navbar-nav navbar-right&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">1</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">2</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">3</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">4</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">5</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">6</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">7</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;container-fluid container-view&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">CONTAINER</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3-container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>   <br/>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-6-container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-6&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-6&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-9-and-6-container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-9&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">9</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;rows-inside-a-row&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-lg-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-lg-9&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span> <br/>
+</span><span class='line'>          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;JS/jquery-2.1.0.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;bootstrap-3.1.1-dist/js/bootstrap.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">You can see in the code that i use classes like <code>col-md-3</code>, <code>col-md-6</code>, <code>col-lg-9</code> and <code>row</code>, this are the classes that are already been set-up in bootstrap CSS and JS. If you can notice in the Navigation part, there are different classes that i use these are the classes that you need to use to make your Navigation be responsive when your website will be open in a mobile or a tablet, for more understanding click the link above that i give and find the Nav part their. With the use of the classes in bootstrap in helps your website presentable in any type of gadgets. Additional information is that you can overwrite the Bootstrap CSS.</p></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">Output of the code is <a target="_blank" href="http://arvey18.github.io/bootstrap-sample/">here</a>. All I do in CSS part are adding color and changing the heights. Resize the window or open the url in your phone or tablet so you can see how Bootstrap works with different sizes of a window.</p></p>
+
+<p><h1>Grid System </h1><em>(additional Information)</em></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; Using class=&ldquo;<strong>CONTAINER</strong>&rdquo;</p></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Web View</strong></p>
+<img class="left bootstrap-img-web" src="/images/container-web-view.png" width="100" height="100" title="image" alt="images">
+<p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Mobile View</strong></p>
+<img class="left bootstrap-img-mobile" src="/images/container-mobile-view.png" width="100" height="100" title="image" alt="images"></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">Container class will make your your content in a center having a <code>margin-left</code> and  <code>margin-right</code> .</p></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; Using class=&ldquo;<strong>row</strong>&rdquo;</p></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Web View</strong></p>
+<img class="left bootstrap-img-web" src="/images/row-web-view.png" width="100" height="100" title="image" alt="images">
+<p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Mobile View</strong></p>
+<img class="left bootstrap-img-mobile" src="/images/row-mobile-view.png" width="100" height="100" title="image" alt="images"></p>
+
+<p><p align = "justify" style = "text-indent: 30px;">Row class dont have a <code>margin-left</code> and  <code>margin-right</code>. Click <a target="_blank" href="http://getbootstrap.com/css/">here</a> for more information of bootstrap CSS class.</p></p>
+
+<p><h1>That&rsquo;s all for now. Thanks! &ndash; @AJ</h1></p>
 
       </div>
     </div>
