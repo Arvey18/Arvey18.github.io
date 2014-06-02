@@ -4,7 +4,7 @@
   <title><![CDATA[Arvey R. Jimenez]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2014-06-01T23:28:44+08:00</updated>
+  <updated>2014-06-02T13:32:30+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
     <name><![CDATA[Arvey Jimenez]]></name>
@@ -12,6 +12,240 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Plugins Used in Creating Aura]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/06/02/plugins-used-in-creating-aura/"/>
+    <updated>2014-06-02T10:59:32+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/06/02/plugins-used-in-creating-aura</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/plugins-img.jpg" title="image" alt="images"></p>
+
+<p align = "justify " style = "text-indent: 30px;">Together with my co-trainee, our trainor gave us theme that we need to copy as an exercise. The theme that he gave to me is the Aura theme and in creating my own Aura theme I used some plugins to make it more attractive in users.</p>
+
+
+
+
+<!--more-->
+
+
+
+
+<h1>JS Plugins</h1>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">1. <strong>Jqueryloader2</strong></p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">This is a loader that will show first before the content of the website appear. It is a loader that will wait if all the content of your website has been loaded like the images, videos and the text you put in.</p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">To use the plugin all you need to do is download it <a target="_blank" href="https://github.com/Gaya/QueryLoader2/zipball/master">here</a> and connect it like the code below.</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your you include your jQuery</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/jquery.queryloader2.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">Then, call it in your Main <code>JS</code> like this:</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">).</span><span class="nx">queryLoader2</span><span class="p">();</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To make it work for <code>iOS devices</code>, use this code:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">).</span><span class="nx">queryLoader2</span><span class="p">();</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">2. <strong>Smoothscroll</strong></p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">This is a plugin that works with the mouse-wheel it makes a smooth effect when scrolling up and down in your website.</p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">You can download the plugin <a target="_blank" href="https://github.com/Arvey18/Jquery-Smooth-Scroll">here</a> and connect it like the code below.</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your you include your jQuery</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/jquery.smoothscroll.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">3. <strong>Waypoint</strong></p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">I use this to make a lazy load effect that when he reach the exact point or area of the browser window it will make an effect. For example you have a portfolio in you Homepage and you want an effect that the images will slide-up in their position when the browser window reach it, you can do that with this plugin, i am reffering to the point of the browser window that it will reach to activate the effect.</p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">You can download the plugin <a target="_blank" href="http://imakewebthings.com/jquery-waypoints/">here</a> and connect it like the code below.</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your you include your jQuery</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/waypoints.min.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">Then, in your Main <code>JS</code> like this:</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">//this is the code how I use it in my Aura theme</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//calling the container class or id</span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.client-logo&#39;</span><span class="p">).</span><span class="nx">waypoint</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">direction</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="c1">//the effect you want to do </span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;animated fadeIn&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;visibility&quot;</span><span class="p">,</span> <span class="s2">&quot;visible&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">},</span> <span class="p">{</span>
+</span><span class='line'>  <span class="c1">//adding offset to make adjust more the window reach point</span>
+</span><span class='line'>  <span class="nx">offset</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">clientoffset</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;scoffset&#39;</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nx">$</span><span class="p">.</span><span class="nx">waypoints</span><span class="p">(</span><span class="s1">&#39;viewportHeight&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">outerHeight</span><span class="p">()</span> <span class="o">-</span> <span class="nx">clientoffset</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<br/>
+
+
+
+
+<h1>CSS Plugins</h1>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">1. <strong>Font Awesome</strong></p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">I use this CSS plugin for the icons only of Aura themes. You can download it <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">here</a> and connect like the code below.</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your title tag</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/font-awesome.min.css&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">Sample code using Font Awesome Icon:</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;fa fa-arrow-up&quot;</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">2. <strong>Animate</strong></p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">This is the CSS3 animation, although you can create on your own I just download it, because it contain all the the effect and all I need to do is add the class like <code>"animate"</code>, <code>"fadeIn"</code>, <code>"fadeUp"</code> and more. You can <a target="_blank" href="http://daneden.github.io/animate.css/">here</a> and connect like the code below.</p>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your title tag</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/animate.css&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">3. <strong>Bootstrap</strong></p>
+
+
+
+
+<p align = "justify " style = "text-indent: 30px;">I have a previous post about bootstrap, you can read it to know how i use bootstrap or click <a href="http://arvey18.github.io/blog/2014/05/20/bootstrap/">here</a>.</p>
+
+
+
+
+<h1>A total of 6 plugin that I used to create the Aura theme. Click <a href="http://arvey18.github.io/Aura/">here</a> so you can see the output. Thanks! - @AJ</h1>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bootstrap]]></title>
