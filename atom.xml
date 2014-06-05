@@ -4,7 +4,7 @@
   <title><![CDATA[Arvey R. Jimenez]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2014-06-04T22:05:33+08:00</updated>
+  <updated>2014-06-05T11:35:16+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
     <name><![CDATA[Arvey Jimenez]]></name>
@@ -518,21 +518,22 @@
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#content{
-</span><span class='line'>  background-color: black;
-</span><span class='line'>  width: 100%;
-</span><span class='line'>  height: 100%;
-</span><span class='line'>  p{
-</span><span class='line'>      color: #FF0000;
-</span><span class='line'>      font-family: 'Arial', Tahoma;
-</span><span class='line'>      font-weight: bold;
-</span><span class='line'>      font-size: 14px;
-</span><span class='line'>  }
-</span><span class='line'>  .content-images{
-</span><span class='line'>      width: 200px;
-</span><span class='line'>      height: 200px;
-</span><span class='line'>  }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -554,18 +555,19 @@
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#content {
-</span><span class='line'>  background-color: black;
-</span><span class='line'>  width: 100%;
-</span><span class='line'>  height: 100%; }
-</span><span class='line'>  #content p {
-</span><span class='line'>    color: #FF0000;
-</span><span class='line'>    font-family: 'Arial', Tahoma;
-</span><span class='line'>    font-weight: bold;
-</span><span class='line'>    font-size: 14px; }
-</span><span class='line'>  #content .content-images {
-</span><span class='line'>    width: 200px;
-</span><span class='line'>    height: 200px; }</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">#</span><span class="nx">content</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="nx">p</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -597,25 +599,26 @@
 <span class='line-number'>17</span>
 <span class='line-number'>18</span>
 <span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$bgColor: #000;
-</span><span class='line'>$textColor: #FF0000;
-</span><span class='line'>$font: 'Arial', Tahoma;
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$bgColor</span><span class="o">:</span> <span class="err">#</span><span class="mi">000</span><span class="p">;</span>
+</span><span class='line'><span class="nx">$textColor</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'><span class="nx">$font</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
 </span><span class='line'>
-</span><span class='line'>#content{
-</span><span class='line'>  background-color: $bgColor;
-</span><span class='line'>  width: 100%;
-</span><span class='line'>  height: 100%;
-</span><span class='line'>  p{
-</span><span class='line'>      color: $textColor;
-</span><span class='line'>      font-family: $font;
-</span><span class='line'>      font-weight: bold;
-</span><span class='line'>      font-size: 14px;
-</span><span class='line'>  }
-</span><span class='line'>  .content-images{
-</span><span class='line'>      width: 200px;
-</span><span class='line'>      height: 200px;
-</span><span class='line'>  }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">$bgColor</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="nx">$textColor</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="nx">$font</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -646,27 +649,28 @@
 <span class='line-number'>19</span>
 <span class='line-number'>20</span>
 <span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>@mixin fontStyle{
-</span><span class='line'>  font:{
-</span><span class='line'>      weight: bold;
-</span><span class='line'>      family: 'Arial', Tahoma;
-</span><span class='line'>      size: 14px;
-</span><span class='line'>  }
-</span><span class='line'>}
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">@</span><span class="nx">mixin</span> <span class="nx">fontStyle</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">font</span><span class="o">:</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'>#content{
-</span><span class='line'>  background-color: black;
-</span><span class='line'>  width: 100%;
-</span><span class='line'>  height: 100%;
-</span><span class='line'>  p{
-</span><span class='line'>      color: #FF0000;
-</span><span class='line'>      @include fontStyle;
-</span><span class='line'>  }
-</span><span class='line'>  .content-images{
-</span><span class='line'>      width: 200px;
-</span><span class='line'>      height: 200px;
-</span><span class='line'>  }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>      <span class="err">@</span><span class="nx">include</span> <span class="nx">fontStyle</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -700,30 +704,31 @@
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$bgColor: #000;
-</span><span class='line'>$textColor: #FF0000;
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$bgColor</span><span class="o">:</span> <span class="err">#</span><span class="mi">000</span><span class="p">;</span>
+</span><span class='line'><span class="nx">$textColor</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
 </span><span class='line'>
-</span><span class='line'>@mixin fontStyle{
-</span><span class='line'>  font:{
-</span><span class='line'>      weight: bold;
-</span><span class='line'>      family: 'Arial', Tahoma;
-</span><span class='line'>      size: 14px;
-</span><span class='line'>  }
-</span><span class='line'>}
+</span><span class='line'><span class="err">@</span><span class="nx">mixin</span> <span class="nx">fontStyle</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">font</span><span class="o">:</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'>#content{
-</span><span class='line'>  background-color: $bgColor;
-</span><span class='line'>  width: 100%;
-</span><span class='line'>  height: 100%;
-</span><span class='line'>  p{
-</span><span class='line'>      color: $textColor;
-</span><span class='line'>      @include fontStyle;
-</span><span class='line'>  }
-</span><span class='line'>  .content-images{
-</span><span class='line'>      width: 200px;
-</span><span class='line'>      height: 200px;
-</span><span class='line'>  }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">$bgColor</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="nx">$textColor</span><span class="p">;</span>
+</span><span class='line'>      <span class="err">@</span><span class="nx">include</span> <span class="nx">fontStyle</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -745,18 +750,19 @@
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#content {
-</span><span class='line'>  background-color: black;
-</span><span class='line'>  width: 100%;
-</span><span class='line'>  height: 100%; }
-</span><span class='line'>  #content p {
-</span><span class='line'>    color: red;
-</span><span class='line'>    font-weight: bold;
-</span><span class='line'>    font-family: 'Arial', Tahoma;
-</span><span class='line'>    font-size: 14px; }
-</span><span class='line'>  #content .content-images {
-</span><span class='line'>    width: 200px;
-</span><span class='line'>    height: 200px; }</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">#</span><span class="nx">content</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="nx">p</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">color</span><span class="o">:</span> <span class="nx">red</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
