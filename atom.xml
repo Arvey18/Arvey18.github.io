@@ -1,16 +1,609 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Arvey R. Jimenez]]></title>
   <link href="http://Arvey18.github.io/atom.xml" rel="self"/>
   <link href="http://Arvey18.github.io/"/>
-  <updated>2015-05-06T11:23:26+08:00</updated>
+  <updated>2014-06-05T13:44:04+08:00</updated>
   <id>http://Arvey18.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Arvey Jimenez]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Plugins Used in Creating Aura]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/06/02/plugins-used-in-creating-aura/"/>
+    <updated>2014-06-02T10:59:32+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/06/02/plugins-used-in-creating-aura</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/plugins-img.jpg" title="image" alt="images"></p>
+<p align = "justify " style = "text-indent: 30px;">Together with my co-trainee, our trainor gave us theme that we need to copy as an exercise. The theme that he gave to me is the Aura theme and in creating my own Aura theme I used some plugins to make it more attractive in users.</p>
+<!--more-->
+<h1>JS Plugins</h1>
+<p align = "justify " style = "text-indent: 30px;">1. <strong>Jqueryloader2</strong></p>
+<p align = "justify " style = "text-indent: 30px;">This is a loader that will show first before the content of the website appear. It is a loader that will wait if all the content of your website has been loaded like the images, videos and the text you put in.</p>
+<p align = "justify " style = "text-indent: 30px;">To use the plugin all you need to do is download it <a target="_blank" href="https://github.com/Gaya/QueryLoader2/zipball/master">here</a> and connect it like the code below.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your you include your jQuery</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/jquery.queryloader2.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">Then, call it in your Main <code>JS</code> like this:</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">).</span><span class="nx">queryLoader2</span><span class="p">();</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+<p>To make it work for <code>iOS devices</code>, use this code:</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">).</span><span class="nx">queryLoader2</span><span class="p">();</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">2. <strong>Smoothscroll</strong></p>
+<p align = "justify " style = "text-indent: 30px;">This is a plugin that works with the mouse-wheel it makes a smooth effect when scrolling up and down in your website.</p>
+<p align = "justify " style = "text-indent: 30px;">You can download the plugin <a target="_blank" href="https://github.com/Arvey18/Jquery-Smooth-Scroll">here</a> and connect it like the code below.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your you include your jQuery</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/jquery.smoothscroll.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">3. <strong>Waypoint</strong></p>
+<p align = "justify " style = "text-indent: 30px;">I use this to make a lazy load effect that when it reach the exact point or area of the browser window it will make an effect. For example you have a portfolio in you Homepage and you want an effect that the images will slide-up in their position when the browser window reach it, you can do that with this plugin, i am reffering to the point of the browser window that it will reach to activate the effect.</p>
+<p align = "justify " style = "text-indent: 30px;">You can download the plugin <a target="_blank" href="http://imakewebthings.com/jquery-waypoints/">here</a> and connect it like the code below.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your you include your jQuery</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/waypoints.min.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">Then, in your Main <code>JS</code> like this:</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">//this is the code how I use it in my Aura theme</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//calling the container class or id</span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.client-logo&#39;</span><span class="p">).</span><span class="nx">waypoint</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">direction</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="c1">//the effect you want to do </span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;animated fadeIn&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;visibility&quot;</span><span class="p">,</span> <span class="s2">&quot;visible&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">},</span> <span class="p">{</span>
+</span><span class='line'>  <span class="c1">//adding offset to make adjust more the window reach point</span>
+</span><span class='line'>  <span class="nx">offset</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">clientoffset</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;scoffset&#39;</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nx">$</span><span class="p">.</span><span class="nx">waypoints</span><span class="p">(</span><span class="s1">&#39;viewportHeight&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">outerHeight</span><span class="p">()</span> <span class="o">-</span> <span class="nx">clientoffset</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+<br/>
+<h1>CSS Plugins</h1>
+<p align = "justify " style = "text-indent: 30px;">1. <strong>Font Awesome</strong></p>
+<p align = "justify " style = "text-indent: 30px;">I use this CSS plugin for the icons only of Aura themes. You can download it <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">here</a> and connect like the code below.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your title tag</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/font-awesome.min.css&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">Sample code using Font Awesome Icon:</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;fa fa-arrow-up&quot;</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">2. <strong>Animate</strong></p>
+<p align = "justify " style = "text-indent: 30px;">This is the CSS3 animation, although you can create on your own I just download it, because it contain all the the effect and all I need to do is add the class like <code>"animate"</code>, <code>"fadeIn"</code>, <code>"fadeUp"</code> and more. You can <a target="_blank" href="http://daneden.github.io/animate.css/">here</a> and connect like the code below.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//Add this after your title tag</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;path/animate.css&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<p align = "justify " style = "text-indent: 30px;">3. <strong>Bootstrap</strong></p>
+<p align = "justify " style = "text-indent: 30px;">I have a previous post about bootstrap, you can read it to know how i use bootstrap or click <a href="http://arvey18.github.io/blog/2014/05/20/bootstrap/">here</a>.</p>
+<h1>A total of 6 plugin that I used to create the Aura theme. Click <a href="http://arvey18.github.io/Aura/">here</a> so you can see the output. Thanks! - @AJ</h1>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bootstrap]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/05/20/bootstrap/"/>
+    <updated>2014-05-20T13:26:57+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/05/20/bootstrap</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/bootstrap.png" title="image" alt="images"></p>
+<p align = "justify" style = "text-indent: 30px;">Bootstrap is one of the best thing i learned so far, because it makes your website responsive. Responsive means whether you open your website in a mobile phone or a tablet your website will always look good and arranged well.</p>
+<p align = "justify" style = "text-indent: 30px;">Bootstrap sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. A <code>12-column</code> <strong>responsive grid, dozens of components, JavaScript plugins, typography, form controls,</strong> and even a <strong>web-based Customizer</strong> to make Bootstrap your own.</p>
+<!--more-->
+<p align = "justify" style = "text-indent: 30px;">Bootstrap is free that you can download <a target="_blank" href="http://getbootstrap.com/">here</a>. Bootstrap offers <strong>pre-made button, progress bar, slider or carousel, alerts, thumbnails</strong> and also the <strong>navigation</strong> part of your html, that you can see it all <a target="_blank" href="http://getbootstrap.com/components/">here</a>. To use the bootstrap all you need to do is download it and connect the <code>CSS</code> and <code>JS</code> files.</p>
+<p><p align = "justify" style = "text-indent: 30px;">One of the most used feature of Bootstrap is the <strong>Grid System</strong>. I will explain and show to you what i learned so far with Bootstrap Grid System. Example Code Below.</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;!</span><span class="n">DOCTYPE</span> <span class="n">HTML</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;CSS/style.css&quot;</span> <span class="o">/&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;bootstrap-3.1.1-dist/css/bootstrap.css&quot;</span> <span class="o">/&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="kt">id</span><span class="o">=</span><span class="s">&quot;navigations&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar navbar-default navbar-fixed-top&quot;</span> <span class="n">role</span><span class="o">=</span><span class="s">&quot;navigation&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar-header&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;</span><span class="n">button</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar-toggle&quot;</span> <span class="n">data</span><span class="o">&ndash;</span><span class="n">toggle</span><span class="o">=</span><span class="s">&quot;collapse&quot;</span>
+</span><span class='line'>                  <span class="n">data</span><span class="o">&ndash;</span><span class="n">target</span><span class="o">=</span><span class="s">&quot;#navbar-collapse&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;background: white;&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;sr-only&quot;</span><span class="o">&gt;</span><span class="n">Toggle</span> <span class="n">navigation</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;icon-bar&quot;</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;icon-bar&quot;</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;icon-bar&quot;</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">a</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;navbar-brand&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">Brand</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;collapse navbar-collapse&quot;</span> <span class="kt">id</span><span class="o">=</span><span class="s">&quot;navbar-collapse&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;</span><span class="n">ul</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;nav navbar-nav navbar-right&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">1</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">2</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">3</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">4</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">5</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">6</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                      <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span><span class="n">LINK</span> <span class="mi">7</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>                  <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;container-fluid container-view&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">CONTAINER</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3-container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>   <br/>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-6-container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-6&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-6&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-9-and-6-container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-9&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">9</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;rows-inside-a-row&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-lg-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROWS</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-lg-9&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>              <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">BOOTSTRAP</span> <span class="n">ROW</span> <span class="n">inside</span> <span class="n">a</span> <span class="n">ROW</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">lg</span><span class="o">&ndash;</span><span class="mi">9</span><span class="p">,</span> <span class="n">the</span> <span class="n">inside</span> <span class="n">row</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span> <br/>
+</span><span class='line'>          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;JS/jquery-2.1.0.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;bootstrap-3.1.1-dist/js/bootstrap.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+<p><p align = "justify" style = "text-indent: 30px;">You can see in the code that i use classes like <code>col-md-3</code>, <code>col-md-6</code>, <code>col-lg-9</code> and <code>row</code>, this are the classes that are already been set-up in bootstrap CSS and JS. If you can notice in the Navigation part, there are different classes that i use these are the classes that you need to use to make your Navigation be responsive when your website will be open in a mobile or a tablet, for more understanding click the link above that i give and find the Nav part their. With the use of the classes in bootstrap in helps your website presentable in any type of gadgets. Additional information is that you can overwrite the Bootstrap CSS.</p></p>
+<p><p align = "justify" style = "text-indent: 30px;">Output of the code is <a target="_blank" href="http://arvey18.github.io/bootstrap-sample/">here</a>. All I do in CSS part are adding color and changing the heights. Resize the window or open the url in your phone or tablet so you can see how Bootstrap works with different sizes of a window.</p></p>
+<p><h1>Grid System </h1><em>(additional Information)</em></p>
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; Using class=&ldquo;<strong>CONTAINER</strong>&rdquo;</p></p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Web View</strong></p>
+<img class="left bootstrap-img-web" src="http://Arvey18.github.io/images/container-web-view.png" width="100" height="100" title="image" alt="images">
+<p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Mobile View</strong></p>
+<img class="left bootstrap-img-mobile" src="http://Arvey18.github.io/images/container-mobile-view.png" width="100" height="100" title="image" alt="images"></p>
+<p><p align = "justify" style = "text-indent: 30px;">Container class will make your your content in a center having a <code>margin-left</code> and  <code>margin-right</code> .</p></p>
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; Using class=&ldquo;<strong>row</strong>&rdquo;</p></p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">using</span> <span class="n">col</span><span class="o">&ndash;</span><span class="n">md</span><span class="o">&ndash;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+<p><p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Web View</strong></p>
+<img class="left bootstrap-img-web" src="http://Arvey18.github.io/images/row-web-view.png" width="100" height="100" title="image" alt="images">
+<p align = "justify" style = "text-indent: 30px;">&ndash; <strong>Mobile View</strong></p>
+<img class="left bootstrap-img-mobile" src="http://Arvey18.github.io/images/row-mobile-view.png" width="100" height="100" title="image" alt="images"></p>
+<p><p align = "justify" style = "text-indent: 30px;">Row class dont have a <code>margin-left</code> and  <code>margin-right</code>. Click <a target="_blank" href="http://getbootstrap.com/css/">here</a> for more information of bootstrap CSS class.</p></p>
+<p><h1>That&rsquo;s all for now. Thanks! &ndash; @AJ</h1></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Compass and SASS]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/05/13/compass-and-sass/"/>
+    <updated>2014-05-13T01:36:19+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/05/13/compass-and-sass</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/compass-and-sass-img.jpg" title="image" alt="images"></p>
+<p align = "justify " style = "text-indent: 30px;">In the past few days, I learned how to use Compass and SASS. Compass and SASS is a big help for a web developer when they are working with thier CSS. It enables you to create variables, create a mixins, the nested rules, creating sprites and one of the best thing for me is that you can create many CSS file and combine them to 1 CSS file that will be link to the HTML file. It make your CSS files more cleaner and more easier to change. It is a big help for a web developer, especially when they are working with big website.</p>
+<!--more-->
+<p align = "justify " style = "text-indent: 30px;">Compass is an application that uses SASS and convert it to a .CSS file. SASS(Syntactically Awesome StyleSheets) allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. It also helps keep large stylesheets well-organized and more easy to modify.</p>
+<h3><em>SASS features:</em></h3>
+<h5>&#8211; NESTING RULE</h5>
+<p align = "justify " style = "text-indent: 30px;">In regular CSS you cannot do this type of rule. It will not be accepted in .CSS file, you will get an error. With the help of SASS you can create this type of rule.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<p>When the Compass convert it to a .CSS file, this will be the ouput.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">#</span><span class="nx">content</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="nx">p</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h5>&#8211; VARIABLES</h5>
+<p align = "justify " style = "text-indent: 30px;">As you can see with the code below, i use 3 variables that holds a certain value and the variables will be the one to place in the CSS property value. Variables in SASS is a big help because if your CSS files are having thousands of lines and you want to change the text color and hundred of them are using a red color all you need to do is to find them all, but with the help of Variables all you need to do is change the value of the variable that holding a red text color.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$bgColor</span><span class="o">:</span> <span class="err">#</span><span class="mi">000</span><span class="p">;</span>
+</span><span class='line'><span class="nx">$textColor</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'><span class="nx">$font</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">$bgColor</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="nx">$textColor</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="nx">$font</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h5>&#8211; MIXINS</h5>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">@</span><span class="nx">mixin</span> <span class="nx">fontStyle</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">font</span><span class="o">:</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>      <span class="err">@</span><span class="nx">include</span> <span class="nx">fontStyle</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h5>&#8211;SASS Final Output</h5>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$bgColor</span><span class="o">:</span> <span class="err">#</span><span class="mi">000</span><span class="p">;</span>
+</span><span class='line'><span class="nx">$textColor</span><span class="o">:</span> <span class="err">#</span><span class="nx">FF0000</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">@</span><span class="nx">mixin</span> <span class="nx">fontStyle</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">font</span><span class="o">:</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">#</span><span class="nx">content</span><span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">$bgColor</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">p</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">color</span><span class="o">:</span> <span class="nx">$textColor</span><span class="p">;</span>
+</span><span class='line'>      <span class="err">@</span><span class="nx">include</span> <span class="nx">fontStyle</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span><span class="p">{</span>
+</span><span class='line'>      <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h5>&#8211; CSS FINAL OUTPUT</h5>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">#</span><span class="nx">content</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">:</span> <span class="nx">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="nx">p</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">color</span><span class="o">:</span> <span class="nx">red</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="nx">Tahoma</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="err">#</span><span class="nx">content</span> <span class="p">.</span><span class="nx">content</span><span class="o">-</span><span class="nx">images</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="nx">px</span><span class="p">;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<p>With the help of Compass and SASS modifying CSS property if much easier.</p>
+<h2>That&#8217;s all for today! Thanks for reading! &#8211; @AJ</h2>
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wordpress]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/05/11/wordpress/"/>
+    <updated>2014-05-11T19:43:53+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/05/11/wordpress</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/wordpress-img.png" title="image" alt="images"></p>
+<p align = "justify " style = "text-indent: 30px;"> Wordpress is an application which you can create a website that is working efficiently and beautifully done. It is a application that is created for the people who does not have enough knowledge on creating a website using HTML, CSS and Javascript or Jquery. In wordpress you can create different website with different designs. The better the theme, the better the output.   </p>
+<!--more-->
+<h4> <em>How to install wordpress?</em></h4>
+<p><p align = "justify " style = "text-indent: 30px;"> Installing a wordpress is easy, all you need is to install first an application called XAMPP and download the wordpress files (<a target="_blank" style="text-decoration: none; color: black;" href="http://irishlightandcolour.blogspot.com/2013/10/install-xampp-for-linux-on-ubuntu-1204.html"><em>XAMPP</em></a> > <a target="_blank" style="text-decoration: none; color: black;" href="http://wordpress.org/"><em>Wordpress</em></a>). XAMPP is very important because without it you cannot open the the wordpress and we need XAMPP for creating the database of the wordpress that is needed in installing wordpress. You need to always activate the XAMPP before you can use the wordpress. Click <a target="_blank" href="https://codex.wordpress.org/Installing_WordPress">here</a> for the guide in installing wordpress.</p>
+<p><h4> <em>Using Wordpress</em></h4>
+<p align = "justify " style = "text-indent: 30px;">After you are done installing it, you will see a log-in page. You need to type the username and password you created.</p></p>
+<p><img class="left" src="http://Arvey18.github.io/images/wordpress-log-in.png" title="image" alt="images"></p>
+<p><p align = "justify " style = "text-indent: 30px;">The main page of wordpress. This is the page where you will create the website you want to produce. In the left side, you can see the different options you can click to modify your website and in the right side is the informations you put in a youre website.</p></p>
+<p><img class="left" src="http://Arvey18.github.io/images/wordpress-main.png" title="image" alt="images"><br/></p>
+<p><p align = "justify " style = "text-indent: 30px;"> Wordpress very user-friendly and easy to modify the things inside of it. The output of the website you will create is base upon the theme you are using and how you will put informations on it.</p></p>
+<p> <p align = "justify " style = "text-indent: 30px;">When im using wordpress, first thing I do is to find a theme that is applicable to the website i want to create. You can download themes using wordpress by clicking the menu &ldquo;Appearance > themes&rdquo; and you can see the &ldquo;Add new&rdquo; in the top of the page. You can also download in the internet copy it and paste it in the wordpress themes folder. Some themes are free and some are not. After finding a theme, I edit/change, add and delete information in the theme. I add pages using the &ldquo;Pages&rdquo; menu, click it and put the information you want to be included in the website. Example of pages like: About, Services, Contact, Home etc. all of that i create in the pages menu. You can make them as a menu by clicking the &ldquo;Appearance > Menu&rdquo; add them in the menu list. You can add Pictures or videos by clicking the &ldquo;Media&rdquo; and &ldquo;Add new&rdquo;. You can also put some post by clicking &ldquo;Post&rdquo; menu. Another thing is the Plugins that can help your website much more beautiful. One good thing also in wordpress that i noticed that if you have also knowledge in HTML and CSS you can put some style in the Editor by clicking &ldquo;Appearance > Edtor&rdquo;. You can see the output of the website by clicking the Name of the website that is located in the top left side of the browser window that also have an icon of home.</p></p>
+<p><p align = "justify " style = "text-indent: 30px;">I enjoyed using wordpress and still working on it to know the other capabilities of it.</p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Other Effects of Image Slider]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/04/14/exercise2/"/>
+    <updated>2014-04-14T09:39:51+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/04/14/exercise2</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/Exercise2.png" title="image" alt="images"></p>
+<p align = "justify " style = "text-indent: 30px;">This is one of my favorite image slider that ive done so far. Showing 3 images and when clicked left and right, it will show the other image  grouped into 3 again. I also learned some other effects inside image slider like the putting some description and adding some animation on it. Output below.</p>
+<p><em>&mdash;Home Page</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Javascript and Jquery]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/04/08/learning-javascript-and-jquery/"/>
+    <updated>2014-04-08T10:42:59+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/04/08/learning-javascript-and-jquery</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://Arvey18.github.io/images/javascript-Jquery.jpg" title="image" alt="images"></p>
+<p align = "justify " style = "text-indent: 30px;"> Learning Javascript and Jquery is not easy for me, because in school we dont have a subject for Javascript and Jquery. Javascript and Jquery enables you to make different effects on a website. You can do some animation like an image slider that will slide or fade, you can do also some effect like when you click the button there will a message or picture that will pop-out. There are so many thing you can do using Javascript or Jquery.</p>
+<!--more-->
+<h3> Difference Between The Two </h3>
+<h4><em> Javascript </em> </h4>
+<p align = "justify " style = "text-indent: 30px;"> Javascript is a scripting language developed by Netscape to enable Web authors to design interactive sites. Javascript is different from Java. Sample code below.</p>
+<p><img class="left" src="http://Arvey18.github.io/images/Javascript.png" title="image" alt="images"></p>
+<h4><em> Jquery </em> </h4>
+<p align = "justify " style = "text-indent: 30px;"> Jquery for me is much easy than the Javascript and much flexible, because you can do much more and much easy with the use of Javascript. The only difference between them i think is the code but same function. Sample code below.</p>
+<p><img class="left" src="http://Arvey18.github.io/images/Jquery.png" title="image" alt="images"></p>
+<h3> First Exercise in FavMed using Javascript and Jquery (Simple Image Slider).</h3>
+<p><img class="left" src="http://Arvey18.github.io/images/Exercise1.png" title="image" alt="images"></p>
+<h5><em>&#8212;Home Page</em></h5>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Post]]></title>
+    <link href="http://Arvey18.github.io/blog/2014/03/31/first-post/"/>
+    <updated>2014-03-31T09:49:19+08:00</updated>
+    <id>http://Arvey18.github.io/blog/2014/03/31/first-post</id>
+    <content type="html"><![CDATA[<p align = "justify" style = "text-indent: 30px;"> First of all. My name is Arvey R. Jimenez, 20 years old. I&#8217;m a 4th year BSIT Student at Nueva Ecija University of Science and Technology (NEUST). I will graduate this coming April 3, 2014 and this is how i got here at Favorite Medium as a trainee.</p>
+<p align = "justify" style = "text-indent: 30px;">First, there was a event in our deparment CICT, titled &#8220;TECHNO DAY&#8221; and there are a lot of contest like Java Programming, Networking, Typing, Quiz bee and the contest that i joined was the Web Design and i really don&#8217;t expect that i will win that contest but thanks to God i won. In the awarding ceremony we have a guest and they said he also graduated at NEUST and now a successful Web Developer. I didn&#8217;t expect anything when they said it and after the awarding he invited me with my other classmate to go to his office. The day he said that, i really thank god for giving us an oppurtunity like this. The day that we are there, he said they are looking for trainee to work for thier company and we need to pass it. When he said that, we already grab the oppurtunity and will do our best. I am really happy on that day and thanks to them for giving us an oppurtunity. That&#8217;s how i became a trainee together with my classmates. This is one of the best gift I received before my graduation. Hopefully i passed the training and get my 1st job as a Web Developer.</p>
+]]></content>
+  </entry>
   
 </feed>
